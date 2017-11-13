@@ -10,8 +10,9 @@ document.querySelector('h1').appendChild(list);
 
 // Add List content
 
-var listItem = document.createElement('li');
+
 function addName(name) {
+  var listItem = document.createElement('li');
   listItem.textContent = name;
   document.querySelector('ul').appendChild(listItem);
 }
@@ -20,10 +21,10 @@ function addName(name) {
 // adding names to list
 
 var names = ['Jon', 'Po', 'Mona', 'Davia', 'David', 'Don'];
-function printNames(array, cb) {
+function printNames(array) {
   for  (let i = 0; i < array.length; i++) {
     let name = array[i];
     addName(name);
   }
 }
-printNames(names, addName());
+printNames(names);
