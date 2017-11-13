@@ -8,8 +8,8 @@ document.querySelector('body').appendChild(header);
 var list = document.createElement('ul');
 document.querySelector('h1').appendChild(list);
 
-// Add List content
 
+// Create list element and add List content
 
 function addName(name) {
   var listItem = document.createElement('li');
@@ -18,7 +18,7 @@ function addName(name) {
 }
 
 
-// adding names to list
+// adding names to list via loop
 
 var names = ['Jon', 'Po', 'Mona', 'Davia', 'David', 'Don'];
 function printNames(array) {
